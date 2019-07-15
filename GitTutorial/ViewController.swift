@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let message = "Hello Everybody!"
+    let message = "Hello World!"
     
     override func viewDidLoad() {
         super.viewDidLoad()
