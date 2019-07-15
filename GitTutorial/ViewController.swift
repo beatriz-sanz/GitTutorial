@@ -10,21 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var reverseLabel: UILabel!
+    
     let message = "Hello World!"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(message)
-        print(reverse(text: "stressed"))
-    }
-    
-    func reverse(text: String) -> String {
-        return String(text.reversed())
+        
+        let reversed = reverse(text: "stressed")
+        print(reversed)
+        reverseLabel.text = reversed
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func reverse(text: String) -> String {
+        return String(text.reversed())
     }
     
 }
